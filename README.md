@@ -1,6 +1,6 @@
 # AdoPet
 
-A new Flutter project.
+Projeto de aplicativo de adoção animal, desenvolvido em flutter.
 
 ## Getting Started
 
