@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class Palette {
-  static const Color scaffold = Color(0xFFEBEDEE);
+  static const Color scaffold = Color(0xFFFFFFFF);
 
-  static const Color primaryColor = Color(0xFFC0C7CC);
+  static const Color primaryColor = Color(0xFFF9F9F9);
 
   static const LinearGradient createRoomGradient = LinearGradient(
     colors: [Color(0xFF496AE1), Color(0xFFCE48B1)],
