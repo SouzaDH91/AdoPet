@@ -107,7 +107,7 @@ class HomeScreen extends StatelessWidget {
                       style: TextStyle(
                         fontFamily: "Fredoka One",
                         fontSize: 20.0,
-                        color: Color(0xFFA6A6A6),
+                        color: Color(0xFF333333),
                       ),
                     ),
                   ),
@@ -129,11 +129,40 @@ class HomeScreen extends StatelessWidget {
                       ),
                       prefixIcon: Icon(
                         Icons.search,
-                        color: Color(0xFFA6A6A6),
+                        color: Color(0xFF000000),
+                        size: 32.0,
                       ),
                     ),
                   ),
                 ],
+              ),
+            ),
+          ),
+          SliverPadding(
+            padding: const EdgeInsets.only(top: 10.0),
+            sliver: SliverToBoxAdapter(
+              child: Container(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    new Padding(
+                      padding: const EdgeInsets.only(
+                        top: 30.0,
+                        left: 30.0,
+                      ),
+                      child: Text(
+                        "Categorias",
+                        style: TextStyle(
+                          fontFamily: "Fredoka One",
+                          color: Color(0xFF333333),
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                    Categories(categories: categories),
+                  ],
+                ),
               ),
             ),
           ),

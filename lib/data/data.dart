@@ -1,4 +1,6 @@
 import 'package:AdoPet/models/models.dart';
+import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 final User currentUser = User(
   name: 'Diego Souza',
@@ -104,6 +106,45 @@ final List<User> onlineUsers = [
     name: 'Jessie Samson',
     photo:
         'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+  ),
+];
+
+final List<Category> categories = [
+  Category(
+    category: "Cães",
+    micon: Icon(
+      MdiIcons.dog,
+      color: Colors.green,
+      size: 46.0,
+    ),
+    total: 35,
+  ),
+  Category(
+    category: "Gatos",
+    micon: Icon(
+      MdiIcons.cat,
+      color: Colors.red,
+      size: 46.0,
+    ),
+    total: 60,
+  ),
+  Category(
+    category: "Passáros",
+    micon: Icon(
+      MdiIcons.twitter,
+      color: Colors.orange,
+      size: 46.0,
+    ),
+    total: 28,
+  ),
+  Category(
+    category: "Peixes",
+    micon: Icon(
+      MdiIcons.fish,
+      color: Colors.purple,
+      size: 46.0,
+    ),
+    total: 35,
   ),
 ];
 
